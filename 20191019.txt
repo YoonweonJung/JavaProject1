@@ -1,0 +1,33 @@
+echo "# JavaPractice" >> README.md
+
+//// In Local (최초)
+// 사용하는 폴더에서 
+git init
+
+// 올릴 파일 폴더들을 staging 해준다.
+git add README.md
+// staging 파일들을 기록한다.
+git commit -m "first commit"
+
+//// To Remote
+// 저장할 주소 설정 ( 최초에만 )
+git remote add origin https://github.com/YoonweonJung/JavaPractice.git
+// 위 주소에 파일 업로드
+git push origin master
+
+//// 최초 이후
+// staging
+git add 올릴파일들
+// commit
+git commit -m "커밋 내용"
+// push
+git push 
+
+// 상태 확인
+git status
+
+//내려받기
+git clone ${url}
+
+//최근 commit 상태 내려받기 (일종의 동기화)
+git pull
